@@ -18,7 +18,7 @@ Welcome to my daily coding tracker! I am documenting my progression from Python 
 - [x] **Phase 1:** Core Python Foundations
 - [x] **Phase 2:** External Data, File I/O & APIs
 - [x] **Phase 3:** AWS Cloud Automation (Boto3)
-- [ ] **Phase 4:** DevOps & Containerization
+- [x] **Phase 4:** DevOps & Containerization
 
 ---
 
@@ -36,7 +36,7 @@ Welcome to my daily coding tracker! I am documenting my progression from Python 
 - **Topics Mastered:** AWS Boto3 SDK, IAM credential resolution, S3 bucket provisioning, cloud object storage, and the Infrastructure as Code (IaC) lifecycle.
 - **Project:** Wrote a Python script to automatically provision a globally unique AWS S3 bucket, upload local security audit logs to the cloud, verify the storage state, and safely tear down the infrastructure to prevent billing charges.
 
-## Day 4: Containerization with Docker
+### ✅ Day 4: Containerization with Docker
 
 - **Objective:** Package a standalone Python script and its dependencies into a portable, isolated Linux container using Docker.
 - **Key Files Created:**
