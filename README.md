@@ -7,8 +7,9 @@ Welcome to my daily coding tracker! I am documenting my progression from Python 
 *Focus: Cloud Engineering, AWS Infrastructure, and DevOps Automation*
 
 ## 🛠️ Tech Stack
-- **Language:** Python 3
-- **Environment:** Linux (Ubuntu/WSL2), Jupyter Notebooks
+- **Languages & SDKs:** Python 3, Boto3 (AWS SDK), Requests
+- **DevOps & Cloud:** Docker, AWS (S3, IAM)
+- **Environment:** Linux (Ubuntu/WSL2), Jupyter Notebooks, Terminal
 - **Version Control:** Git & GitHub
 
 ---
@@ -18,14 +19,16 @@ Welcome to my daily coding tracker! I am documenting my progression from Python 
 - [x] **Phase 1:** Core Python Foundations
 - [x] **Phase 2:** External Data, File I/O & APIs
 - [x] **Phase 3:** AWS Cloud Automation (Boto3)
-- [x] **Phase 4:** DevOps & Containerization
+- [x] **Phase 4:** DevOps & Containerization (Docker)
+- [ ] **Phase 5:** CI/CD & Automated Workflows
+- [ ] **Phase 6:** Infrastructure as Code & Cloud Deployment
 
 ---
 
 ## 📅 Daily Log
 
 ### ✅ Day 1: Python Fundamentals
-- **Topics Mastered:** Variables, Lists, Loops, Conditionals, Dictionaries, Functions, and Error Handling (Try/Except).
+- **Topics Mastered:** Variables, Lists, Loops, Conditionals, Dictionaries, Functions, and Error Handling (`try/except`).
 - **Project:** Built a local *Cloud Budget Auditor* script to automatically check infrastructure costs against a defined budget.
 
 ### ✅ Day 2: External Data & APIs
@@ -37,13 +40,5 @@ Welcome to my daily coding tracker! I am documenting my progression from Python 
 - **Project:** Wrote a Python script to automatically provision a globally unique AWS S3 bucket, upload local security audit logs to the cloud, verify the storage state, and safely tear down the infrastructure to prevent billing charges.
 
 ### ✅ Day 4: Containerization with Docker
-
-- **Objective:** Package a standalone Python script and its dependencies into a portable, isolated Linux container using Docker.
-- **Key Files Created:**
-  - `app.py`: Modular Python script fetching user metadata from the GitHub REST API.
-  - `requirements.txt`: Explicit dependency declaration file for `requests`.
-  - `Dockerfile`: Multi-layer blueprint leveraging `python:3.10-slim`, configuring `WORKDIR /app`, and establishing build/runtime parameters.
-- **Core DevOps Takeaways:**
-  - **Build-Time vs. Runtime:** Understanding the operational difference between `RUN` (baked into the static image layer during build) and `CMD` (default entrypoint executed on container launch).
-  - **Docker Layer Caching:** Ordering Dockerfile instructions (`COPY requirements.txt` before `COPY app.py`) to prevent unnecessary dependency downloads when code changes.
-  - **Container Lifecycle:** Building (`docker build -t github-app .`) and running isolated execution environments (`docker run github-app`) in Linux.
+- **Topics Mastered:** Docker architecture (`Dockerfile`, Images, Containers), Linux base images (`python:3.10-slim`), dependency isolation (`requirements.txt`), Docker layer caching, and build-time (`RUN`) vs. runtime (`CMD`) execution parameters.
+- **Project:** Containerized a Python GitHub API profile metadata fetcher (`app.py`) into a lightweight Docker image (`github-app`) and executed it inside an isolated Linux container.
