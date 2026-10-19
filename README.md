@@ -36,5 +36,14 @@ Welcome to my daily coding tracker! I am documenting my progression from Python 
 - **Topics Mastered:** AWS Boto3 SDK, IAM credential resolution, S3 bucket provisioning, cloud object storage, and the Infrastructure as Code (IaC) lifecycle.
 - **Project:** Wrote a Python script to automatically provision a globally unique AWS S3 bucket, upload local security audit logs to the cloud, verify the storage state, and safely tear down the infrastructure to prevent billing charges.
 
-### ⏳ Day 4: DevOps & Containerization (In Progress)
-- **Current Focus:** Packaging Python applications using Docker to ensure they run flawlessly across any Linux environment.
+## Day 4: Containerization with Docker
+
+- **Objective:** Package a standalone Python script and its dependencies into a portable, isolated Linux container using Docker.
+- **Key Files Created:**
+  - `app.py`: Modular Python script fetching user metadata from the GitHub REST API.
+  - `requirements.txt`: Explicit dependency declaration file for `requests`.
+  - `Dockerfile`: Multi-layer blueprint leveraging `python:3.10-slim`, configuring `WORKDIR /app`, and establishing build/runtime parameters.
+- **Core DevOps Takeaways:**
+  - **Build-Time vs. Runtime:** Understanding the operational difference between `RUN` (baked into the static image layer during build) and `CMD` (default entrypoint executed on container launch).
+  - **Docker Layer Caching:** Ordering Dockerfile instructions (`COPY requirements.txt` before `COPY app.py`) to prevent unnecessary dependency downloads when code changes.
+  - **Container Lifecycle:** Building (`docker build -t github-app .`) and running isolated execution environments (`docker run github-app`) in Linux.
