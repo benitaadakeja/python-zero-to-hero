@@ -8,7 +8,7 @@ Welcome to my daily coding tracker! I am documenting my progression from Python 
 
 ## 🛠️ Tech Stack
 - **Languages & SDKs:** Python 3, Boto3 (AWS SDK), Requests
-- **DevOps & Cloud:** Docker, AWS (S3, IAM)
+- **DevOps & Cloud:** Docker, GitHub Actions (CI/CD), AWS (S3, IAM)
 - **Environment:** Linux (Ubuntu/WSL2), Jupyter Notebooks, Terminal
 - **Version Control:** Git & GitHub
 
@@ -20,7 +20,7 @@ Welcome to my daily coding tracker! I am documenting my progression from Python 
 - [x] **Phase 2:** External Data, File I/O & APIs
 - [x] **Phase 3:** AWS Cloud Automation (Boto3)
 - [x] **Phase 4:** DevOps & Containerization (Docker)
-- [ ] **Phase 5:** CI/CD & Automated Workflows
+- [x] **Phase 5:** CI/CD & Automated Workflows (GitHub Actions)
 - [ ] **Phase 6:** Infrastructure as Code & Cloud Deployment
 
 ---
@@ -42,3 +42,7 @@ Welcome to my daily coding tracker! I am documenting my progression from Python 
 ### ✅ Day 4: Containerization with Docker
 - **Topics Mastered:** Docker architecture (`Dockerfile`, Images, Containers), Linux base images (`python:3.10-slim`), dependency isolation (`requirements.txt`), Docker layer caching, and build-time (`RUN`) vs. runtime (`CMD`) execution parameters.
 - **Project:** Containerized a Python GitHub API profile metadata fetcher (`app.py`) into a lightweight Docker image (`github-app`) and executed it inside an isolated Linux container.
+
+### ✅ Day 5: CI/CD Pipelines with GitHub Actions
+- **Topics Mastered:** Continuous Integration (CI) fundamentals, YAML syntax rules (indentation, structure), event triggers (`on: push`), GitHub managed runners (`ubuntu-latest`), workflow jobs/steps, reusable actions (`checkout`, `setup-python`), and automated container image validation.
+- **Project:** Engineered an automated CI workflow (`.github/workflows/ci.yml`) that triggers on every push to `main`, provisions a cloud VM, installs dependencies, and automatically executes `docker build` to ensure image integrity.
