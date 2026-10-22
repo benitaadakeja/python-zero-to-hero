@@ -1,4 +1,5 @@
 # 🚀 Python Zero to Hero: Cloud & DevOps Journey
+[![GitHub Actions CI](https://github.com/benitaadakeja/python-zero-to-hero/actions/workflows/ci.yml/badge.svg)](https://github.com/benitaadakeja/python-zero-to-hero/actions/workflows/ci.yml)
 
 Welcome to my daily coding tracker! I am documenting my progression from Python fundamentals to AWS Cloud automation and DevOps engineering.
 
