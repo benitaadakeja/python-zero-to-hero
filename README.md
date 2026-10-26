@@ -22,8 +22,9 @@ Welcome to my daily coding tracker! I am documenting my progression from Python 
 - [x] **Phase 3:** AWS Cloud Automation (Boto3)
 - [x] **Phase 4:** DevOps & Containerization (Docker)
 - [x] **Phase 5:** CI/CD & Automated Workflows (GitHub Actions)
-- [ ] **Phase 6:** Infrastructure as Code & Cloud Deployment
-
+- [x] **Phase 6:** Infrastructure as Code & Cloud Deployment
+- [ ] **Phase 7:** Cloud Container Registry & ECS Deployment
+- [ ] **Phase 8:** Production Hardening, Monitoring & Capstone
 ---
 
 ## 📅 Daily Log
@@ -47,3 +48,7 @@ Welcome to my daily coding tracker! I am documenting my progression from Python 
 ### ✅ Day 5: CI/CD Pipelines with GitHub Actions
 - **Topics Mastered:** Continuous Integration (CI) fundamentals, YAML syntax rules (indentation, structure), event triggers (`on: push`), GitHub managed runners (`ubuntu-latest`), workflow jobs/steps, reusable actions (`checkout`, `setup-python`), and automated container image validation.
 - **Project:** Engineered an automated CI workflow (`.github/workflows/ci.yml`) that triggers on every push to `main`, provisions a cloud VM, installs dependencies, and automatically executes `docker build` to ensure image integrity.
+
+### ✅ Day 6: Infrastructure as Code (IaC) with Terraform
+- **Topics Mastered:** Declarative infrastructure provisioning vs. imperative scripts, HCL syntax (`terraform`, `provider`, `resource`, `output`), state tracking (`terraform.tfstate`), plan file execution (`terraform plan -out`), and AWS ECR container registry architecture.
+- **Project:** Provisioned an AWS Elastic Container Registry (`github-app-repo`) in `us-east-1` with vulnerability image scanning (`scanOnPush = true`) using Terraform, verified deployment via AWS CLI, and secured local state management.

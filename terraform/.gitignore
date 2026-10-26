@@ -1,0 +1,16 @@
+# Local Terraform execution directory (provider binaries - multi-megabyte files)
+.terraform/
+
+# Terraform State files (Contains real-world IDs, sensitive metadata, and secrets)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Execution plan files
+*.tfplan
+plan.out
+
+# Sensitive variable files
+*.tfvars
+*.tfvars.json
+tfplan
