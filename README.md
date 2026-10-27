@@ -23,7 +23,7 @@ Welcome to my daily coding tracker! I am documenting my progression from Python 
 - [x] **Phase 4:** DevOps & Containerization (Docker)
 - [x] **Phase 5:** CI/CD & Automated Workflows (GitHub Actions)
 - [x] **Phase 6:** Infrastructure as Code & Cloud Deployment
-- [ ] **Phase 7:** Cloud Container Registry & ECS Deployment
+- [x] **Phase 7:** Cloud Container Registry & ECS Deployment
 - [ ] **Phase 8:** Production Hardening, Monitoring & Capstone
 ---
 
@@ -52,3 +52,7 @@ Welcome to my daily coding tracker! I am documenting my progression from Python 
 ### ✅ Day 6: Infrastructure as Code (IaC) with Terraform
 - **Topics Mastered:** Declarative infrastructure provisioning vs. imperative scripts, HCL syntax (`terraform`, `provider`, `resource`, `output`), state tracking (`terraform.tfstate`), plan file execution (`terraform plan -out`), and AWS ECR container registry architecture.
 - **Project:** Provisioned an AWS Elastic Container Registry (`github-app-repo`) in `us-east-1` with vulnerability image scanning (`scanOnPush = true`) using Terraform, verified deployment via AWS CLI, and secured local state management.
+
+### ✅ Day 7: Cloud Container Registry & CI/CD Integration (AWS ECR)
+- **Topics Mastered:** GitHub Actions repository secrets security, AWS credential resolution in CI, Amazon ECR authentication (`aws-actions/amazon-ecr-login`), Docker image tagging strategies (Immutable Commit SHA + `latest` mutable alias), and automated container registry pushes.
+- **Project:** Integrated AWS ECR authentication into `.github/workflows/ci.yml`. Configured an automated pipeline that builds, tags, and pushes containerized Python applications to AWS ECR on every push to `main`, and verified cloud image digests via AWS CLI.
